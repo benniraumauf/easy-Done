@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex - Your AI</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link id="main-sheet" rel="stylesheet" href="https://app.saul.angry.ventures/themes/default/stylesheet.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index-stylesheet.css">
+    
+  </head>
+
+
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html" id="">EASYDONE.<span style="font-size: 11; font-family: false" class="font-style">at</span></a>
+          </div>
+          <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href=""><b>Schreiben</b></a>
+                  </li>
+                  <li><a href="">About</a>
+                  </li>
+                  <li><a href="">Preise</a>
+                  </li>
+                  <li><a href="">LOGIN</a>
+                  </li>
+              </ul>
+          </div>
+          <!--/.nav-collapse -->
+      </div>
+  </div>
+
+  <!-- +++++ Posts Lists +++++ -->
+  <!-- +++++ First Post +++++ -->
+  <div id="grey">
+      <!-- /container -->
+      <div class="page-header">
+          
+      </div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script id="main-script" src="js/blog-scripts.js"></script>
+<script src="script.js"></script>
+<script type="module" src="script.js"></script>
+      <form>
+      <div class="container">
+        <h1 id="">Schreibe deine Texte mit EasyDone</h1>
+          <section class="row" id="">
+              <div class="col-md-4">
+                  <p id="">Step 1: Wähle eine Sprache
+                      <select onchange="setlang(this.value)" class="form-control" id="lang" style="left: 0px; width: 360px; overflow: hidden; position: relative;">
+                          <option>Deutsch</option>
+                          <option>Englisch</option>
+                          <option>Spanisch</option>
+                          <option>Französisch</option>
+                          <option>Italienisch</option>
+                      </select>
+                      
+                  </p>
+              </div>
+              <div class="col-md-3">
+                  <p id="">Step 2: Wähle eine Textsorte
+                      <select id="sorte" class="form-control">
+                          <option>Artikel</option>
+                          <option>Bericht</option>
+                          <option>E-Mail</option>
+                          <option>Blogeintrag</option>
+                          <option>Meinungsrede</option>
+                          <option>Essay/Eröerteung</option>
+                          <option>Interview</option>
+                      </select>
+                  </p>
+              </div>
+              <div class="col-md-5">
+
+                  <p id="">Step 3: Beschreibe deine Angabe auf Deutsch.
+                      <textarea name="prompt" class="form-control" rows="3" id="textin" placeholder='Je ausführlicher deine Angabe desto spezifischer und meist Länger wird der Text.      z.B.: "in dem Artikel soll es um die Auswirkungen von des Flugverkehr auf die Wirtschaft eines Landes gehen."'></textarea>
+                  </p>
+              </div>
+          </section>
+      </div>
+      <div class="container text-left" id="">
+          <br>
+          <button type="submit" onclick="gen()" class="btn btn-success">Generate</button>
+          
+        </form>
+          
+          <div id="chat_container"></div>
+      </div>
+
+  </div>
+  <!-- /grey -->
+
+  <!-- +++++ Second Post +++++ -->
+  <!-- /white -->
+
+  <!-- +++++ Third Post +++++ -->
+  <!-- /grey -->
+
+
+
+  <!-- +++++ Footer Section +++++ -->
+
+  <div id="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4">
+                  <h4 id="">Imprint</h4>
+                  <p>Benjamin Raumauf
+                  </p>
+                  <div>Finkenweg 221, 1220 Wien</div>
+                  <p></p>
+              </div>
+              <!-- /col-lg-4 -->
+
+              <div class="col-lg-4">
+                  <h4>My Links</h4>
+                  <p>Coming Soon</p>
+              </div>
+              <!-- /col-lg-4 -->
+
+              <div class="col-lg-4">
+                  <h4>About Easy Done</h4>
+                  <p>Easy Done soll eine Hilfestellung für SchülerInnen sein, die Probleme damit haben Texte in Fremdsprachen zu verfassen.</p>
+              </div>
+              <!-- /col-lg-4 -->
+
+          </div>
+
+      </div>
+  </div>
+
+
+    
+    
+  </body>
+</html>
