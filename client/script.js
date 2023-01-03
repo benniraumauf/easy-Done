@@ -4,7 +4,6 @@ import user from './assets/user.svg'
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
 
-var inputt = ""
 
 
 
@@ -84,10 +83,14 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
     
+    
+    var test = "Schreibe einen " + document.getElementById("sorte").value + " auf " + document.getElementById("lang").value + " mit dem Inhalt: " +  data.get('prompt').toString()
+    
+    
+    
 
-    const test = "Schreibe einen " + document.getElementById("sorte").value + " auf" + document.getElementById("lang").value + " mit dem Inhalt: " +  data.get('prompt').toString()
     //test = "Was heißt Hallo auf englisch" document.getElementById("lang")
-    const response = await fetch('http://localhost:5000', {
+    const response = await fetch('https://4d3f-77-119-211-141.eu.ngrok.io/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -97,8 +100,7 @@ const handleSubmit = async (e) => {
         })
     })
     
-    // to clear the textarea input 
-    form.reset()
+    
 
     clearInterval(loadInterval)
     messageDiv.innerHTML = " "
